@@ -220,15 +220,7 @@ def create_convergence_plots(K, sigma, r, q, T, S, maxN=50):
 
 
 # Streamlit UI
-st.title("Binomial Convergence to Black-Scholes")
 
-st.markdown("""
-The binomial model (blue dots) is compared to the Black-Scholes model (red dotted line) for European 
-options. As the number of time steps in the binomial model is increased, the option values calculated 
-in the binomial model converge to the Black-Scholes values. The deviations of the binomial model values 
-from the Black-Scholes values are the same for both calls and puts, because both models satisfy put-call 
-parity.
-""")
 
 # Create input controls
 col1, col2, col3 = st.columns(3)
